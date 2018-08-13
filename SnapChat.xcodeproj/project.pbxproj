@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		F8EBA852212124BB004D7BDD /* SCCaptureResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureResource.h; sourceTree = "<group>"; };
+		F8EBA853212124BB004D7BDD /* SCCaptureResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureResource.m; sourceTree = "<group>"; };
+		F8EBA855212124BB004D7BDD /* SCManagedCapturerGLViewManagerAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerGLViewManagerAPI.h; sourceTree = "<group>"; };
+		F8EBA856212124BB004D7BDD /* SCManagedCapturerARImageCaptureProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerARImageCaptureProvider.h; sourceTree = "<group>"; };
+		F8EBA857212124BB004D7BDD /* SCManagedCapturerLensAPIProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerLensAPIProvider.h; sourceTree = "<group>"; };
+		F8EBA858212124BB004D7BDD /* SCManagedCapturerLSAComponentTrackerAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerLSAComponentTrackerAPI.h; sourceTree = "<group>"; };
+		F8EBA859212124BB004D7BDD /* SCManagedCapturerLensAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerLensAPI.h; sourceTree = "<group>"; };
+		F8EBA85C212124BB004D7BDD /* SCSnapCreationTriggers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSnapCreationTriggers.m; sourceTree = "<group>"; };
+		F8EBA85D212124BB004D7BDD /* SCSnapCreationTriggers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSnapCreationTriggers.h; sourceTree = "<group>"; };
+		F8EBA85F212124BB004D7BDD /* SCContextAwareSnapCreationThrottleRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCContextAwareSnapCreationThrottleRequest.m; sourceTree = "<group>"; };
+		F8EBA860212124BB004D7BDD /* SCContextAwareSnapCreationThrottleRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCContextAwareSnapCreationThrottleRequest.h; sourceTree = "<group>"; };
+		F8EBA861212124BB004D7BDD /* OWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; path = OWNERS; sourceTree = "<group>"; };
+		F8EBA863212124BB004D7BDD /* SCCapturerTokenProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCapturerTokenProvider.h; sourceTree = "<group>"; };
+		F8EBA864212124BB004D7BDD /* SCManagedAudioStreamer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedAudioStreamer.h; sourceTree = "<group>"; };
+		F8EBA865212124BB004D7BDD /* SCManagedCapturerARSessionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturerARSessionHandler.m; sourceTree = "<group>"; };
+		F8EBA866212124BB004D7BDD /* SCCameraSettingUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCameraSettingUtils.m; sourceTree = "<group>"; };
+		F8EBA867212124BB004D7BDD /* SCManagedCaptureDeviceFocusHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceFocusHandler.h; sourceTree = "<group>"; };
+		F8EBA868212124BB004D7BDD /* SCManagedCaptureDeviceAutoExposureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceAutoExposureHandler.h; sourceTree = "<group>"; };
+		F8EBA869212124BB004D7BDD /* SCManagedVideoNoSoundLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoNoSoundLogger.m; sourceTree = "<group>"; };
+		F8EBA86A212124BB004D7BDD /* ARConfiguration+SCConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARConfiguration+SCConfiguration.h"; sourceTree = "<group>"; };
+		F8EBA86B212124BB004D7BDD /* SCManagedCaptureDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDevice.h; sourceTree = "<group>"; };
+		F8EBA86C212124BB004D7BDD /* SCMetalUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMetalUtils.m; sourceTree = "<group>"; };
+		F8EBA86D212124BB004D7BDD /* SCManagedCaptureDeviceAutoFocusHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceAutoFocusHandler.h; sourceTree = "<group>"; };
+		F8EBA86E212124BB004D7BDD /* SCManagedFrameHealthChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedFrameHealthChecker.m; sourceTree = "<group>"; };
+		F8EBA86F212124BB004D7BDD /* SCManagedCaptureSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureSession.h; sourceTree = "<group>"; };
+		F8EBA870212124BB004D7BDD /* SCManagedCapturerListenerAnnouncer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SCManagedCapturerListenerAnnouncer.mm; sourceTree = "<group>"; };
+		F8EBA871212124BB004D7BDD /* SCManagedStillImageCapturerHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedStillImageCapturerHandler.m; sourceTree = "<group>"; };
+		F8EBA872212124BB004D7BDD /* SCManagedCaptureDeviceSubjectAreaHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceSubjectAreaHandler.m; sourceTree = "<group>"; };
+		F8EBA873212124BB004D7BDD /* SCManagedCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturer.h; sourceTree = "<group>"; };
+		F8EBA874212124BB004D7BDD /* SCManagedCapturePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturePreviewView.h; sourceTree = "<group>"; };
+		F8EBA875212124BB004D7BDD /* SCManagedRecordedVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedRecordedVideo.m; sourceTree = "<group>"; };
+		F8EBA876212124BB004D7BDD /* SCCaptureMetadataObjectParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureMetadataObjectParser.m; sourceTree = "<group>"; };
+		F8EBA877212124BB004D7BDD /* SCManagedStillImageCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedStillImageCapturer.h; sourceTree = "<group>"; };
+		F8EBA878212124BB004D7BDD /* NSURL+Asset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Asset.m"; sourceTree = "<group>"; };
+		F8EBA879212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedDeviceCapacityAnalyzerListener.h; sourceTree = "<group>"; };
+		F8EBA87A212124BB004D7BDD /* SCExposureState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCExposureState.m; sourceTree = "<group>"; };
+		F8EBA87B212124BB004D7BDD /* SCSingleFrameStreamCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSingleFrameStreamCapturer.h; sourceTree = "<group>"; };
+		F8EBA87C212124BB004D7BDD /* SCManagedCapturerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerUtils.h; sourceTree = "<group>"; };
+		F8EBA87D212124BB004D7BDD /* SCManagedCapturerV1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerV1.h; sourceTree = "<group>"; };
+		F8EBA87E212124BB004D7BDD /* SCManagedVideoARDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoARDataSource.h; sourceTree = "<group>"; };
+		F8EBA87F212124BB004D7BDD /* AVCaptureDevice+ConfigurationLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+ConfigurationLock.m"; sourceTree = "<group>"; };
+		F8EBA880212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerListenerAnnouncer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedDeviceCapacityAnalyzerListenerAnnouncer.h; sourceTree = "<group>"; };
+		F8EBA881212124BB004D7BDD /* SCCaptureDeviceAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureDeviceAuthorization.h; sourceTree = "<group>"; };
+		F8EBA882212124BB004D7BDD /* SCCaptureFaceDetectionParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureFaceDetectionParser.h; sourceTree = "<group>"; };
+		F8EBA883212124BB004D7BDD /* SCCaptureDeviceResolver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureDeviceResolver.m; sourceTree = "<group>"; };
+		F8EBA884212124BB004D7BDD /* AVCaptureConnection+InputDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVCaptureConnection+InputDevice.h"; sourceTree = "<group>"; };
+		F8EBA885212124BB004D7BDD /* SCCaptureMetadataOutputDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureMetadataOutputDetector.h; sourceTree = "<group>"; };
+		F8EBA886212124BB004D7BDD /* SCManagedCaptureDeviceFaceDetectionAutoExposureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceFaceDetectionAutoExposureHandler.h; sourceTree = "<group>"; };
+		F8EBA887212124BB004D7BDD /* SCCaptureCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureCommon.m; sourceTree = "<group>"; };
+		F8EBA888212124BB004D7BDD /* SCManagedVideoStreamer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoStreamer.m; sourceTree = "<group>"; };
+		F8EBA889212124BB004D7BDD /* SCManagedCapturerV1_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerV1_Private.h; sourceTree = "<group>"; };
+		F8EBA88A212124BB004D7BDD /* SCCaptureDeviceAuthorizationChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureDeviceAuthorizationChecker.h; sourceTree = "<group>"; };
+		F8EBA88B212124BB004D7BDD /* SCAudioCaptureSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAudioCaptureSession.m; sourceTree = "<group>"; };
+		F8EBA88C212124BB004D7BDD /* UIScreen+Debug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Debug.m"; sourceTree = "<group>"; };
+		F8EBA88D212124BB004D7BDD /* SCFileAudioCaptureSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFileAudioCaptureSession.h; sourceTree = "<group>"; };
+		F8EBA88E212124BB004D7BDD /* SCManagedCapturerSampleMetadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerSampleMetadata.h; sourceTree = "<group>"; };
+		F8EBA88F212124BB004D7BDD /* SCManagedPhotoCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedPhotoCapturer.h; sourceTree = "<group>"; };
+		F8EBA890212124BB004D7BDD /* SCManagedVideoFrameSampler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoFrameSampler.h; sourceTree = "<group>"; };
+		F8EBA891212124BB004D7BDD /* SCManagedCaptureDeviceLockOnRecordExposureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceLockOnRecordExposureHandler.h; sourceTree = "<group>"; };
+		F8EBA892212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerListenerAnnouncer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SCManagedDeviceCapacityAnalyzerListenerAnnouncer.mm; sourceTree = "<group>"; };
+		F8EBA893212124BB004D7BDD /* SCCaptureFaceDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureFaceDetector.h; sourceTree = "<group>"; };
+		F8EBA894212124BB004D7BDD /* SCManagedVideoCapturerOutputSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoCapturerOutputSettings.m; sourceTree = "<group>"; };
+		F8EBA895212124BB004D7BDD /* SCCaptureFaceDetectorTrigger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureFaceDetectorTrigger.m; sourceTree = "<group>"; };
+		F8EBA896212124BB004D7BDD /* SCVideoCaptureSessionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCVideoCaptureSessionInfo.h; sourceTree = "<group>"; };
+		F8EBA897212124BB004D7BDD /* SCManagedVideoCapturerTimeObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoCapturerTimeObserver.m; sourceTree = "<group>"; };
+		F8EBA898212124BB004D7BDD /* SCManagedVideoCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoCapturer.h; sourceTree = "<group>"; };
+		F8EBA899212124BB004D7BDD /* SCManagedCaptureDeviceExposureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceExposureHandler.h; sourceTree = "<group>"; };
+		F8EBA89A212124BB004D7BDD /* SCManagedVideoStreamReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoStreamReporter.h; sourceTree = "<group>"; };
+		F8EBA89C212124BB004D7BDD /* SCManagedCapturerLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerLogging.h; sourceTree = "<group>"; };
+		F8EBA89D212124BB004D7BDD /* SCCaptureStateMachineContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureStateMachineContext.m; sourceTree = "<group>"; };
+		F8EBA89E212124BB004D7BDD /* SCCaptureBaseState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureBaseState.m; sourceTree = "<group>"; };
+		F8EBA89F212124BB004D7BDD /* SCCaptureStateMachineBookKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureStateMachineBookKeeper.m; sourceTree = "<group>"; };
+		F8EBA8A0212124BB004D7BDD /* SCCaptureStateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureStateUtil.m; sourceTree = "<group>"; };
+		F8EBA8A1212124BB004D7BDD /* SCCaptureStateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureStateDelegate.h; sourceTree = "<group>"; };
+		F8EBA8A2212124BB004D7BDD /* SCCaptureStateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureStateUtil.h; sourceTree = "<group>"; };
+		F8EBA8A3212124BB004D7BDD /* SCCaptureStateMachineBookKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureStateMachineBookKeeper.h; sourceTree = "<group>"; };
+		F8EBA8A4212124BB004D7BDD /* SCCaptureBaseState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureBaseState.h; sourceTree = "<group>"; };
+		F8EBA8A6212124BB004D7BDD /* SCCaptureRecordingState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureRecordingState.m; sourceTree = "<group>"; };
+		F8EBA8A7212124BB004D7BDD /* SCCaptureInitializedState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureInitializedState.h; sourceTree = "<group>"; };
+		F8EBA8A8212124BB004D7BDD /* SCCaptureImageWhileRecordingState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureImageWhileRecordingState.h; sourceTree = "<group>"; };
+		F8EBA8A9212124BB004D7BDD /* SCCaptureRunningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureRunningState.h; sourceTree = "<group>"; };
+		F8EBA8AA212124BB004D7BDD /* SCCaptureImageState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureImageState.m; sourceTree = "<group>"; };
+		F8EBA8AB212124BB004D7BDD /* SCCaptureUninitializedState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureUninitializedState.m; sourceTree = "<group>"; };
+		F8EBA8AC212124BB004D7BDD /* SCCaptureScanningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureScanningState.h; sourceTree = "<group>"; };
+		F8EBA8AD212124BB004D7BDD /* SCCaptureImageWhileRecordingStateTransitionPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureImageWhileRecordingStateTransitionPayload.m; sourceTree = "<group>"; };
+		F8EBA8AE212124BB004D7BDD /* SCStateTransitionPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStateTransitionPayload.h; sourceTree = "<group>"; };
+		F8EBA8AF212124BB004D7BDD /* SCCaptureRecordingStateTransitionPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureRecordingStateTransitionPayload.m; sourceTree = "<group>"; };
+		F8EBA8B0212124BB004D7BDD /* SCCaptureImageStateTransitionPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureImageStateTransitionPayload.m; sourceTree = "<group>"; };
+		F8EBA8B1212124BB004D7BDD /* SCCaptureImageWhileRecordingState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureImageWhileRecordingState.m; sourceTree = "<group>"; };
+		F8EBA8B2212124BB004D7BDD /* SCCaptureInitializedState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureInitializedState.m; sourceTree = "<group>"; };
+		F8EBA8B3212124BB004D7BDD /* SCCaptureRecordingState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureRecordingState.h; sourceTree = "<group>"; };
+		F8EBA8B4212124BB004D7BDD /* SCCaptureRunningState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureRunningState.m; sourceTree = "<group>"; };
+		F8EBA8B5212124BB004D7BDD /* SCCaptureRecordingStateTransitionPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureRecordingStateTransitionPayload.h; sourceTree = "<group>"; };
+		F8EBA8B6212124BB004D7BDD /* SCStateTransitionPayload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStateTransitionPayload.m; sourceTree = "<group>"; };
+		F8EBA8B7212124BB004D7BDD /* SCCaptureImageWhileRecordingStateTransitionPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureImageWhileRecordingStateTransitionPayload.h; sourceTree = "<group>"; };
+		F8EBA8B8212124BB004D7BDD /* SCCaptureScanningState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureScanningState.m; sourceTree = "<group>"; };
+		F8EBA8B9212124BB004D7BDD /* SCCaptureUninitializedState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureUninitializedState.h; sourceTree = "<group>"; };
+		F8EBA8BA212124BB004D7BDD /* SCCaptureImageState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureImageState.h; sourceTree = "<group>"; };
+		F8EBA8BB212124BB004D7BDD /* SCCaptureImageStateTransitionPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureImageStateTransitionPayload.h; sourceTree = "<group>"; };
+		F8EBA8BC212124BB004D7BDD /* SCCaptureStateMachineContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureStateMachineContext.h; sourceTree = "<group>"; };
+		F8EBA8BD212124BB004D7BDD /* SCManagedCaptureDeviceSavitzkyGolayZoomHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceSavitzkyGolayZoomHandler.m; sourceTree = "<group>"; };
+		F8EBA8BE212124BB004D7BDD /* SCTimedTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTimedTask.h; sourceTree = "<group>"; };
+		F8EBA8BF212124BB004D7BDD /* SCManagedVideoCapturerLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoCapturerLogger.h; sourceTree = "<group>"; };
+		F8EBA8C0212124BB004D7BDD /* SCManagedFrontFlashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedFrontFlashController.h; sourceTree = "<group>"; };
+		F8EBA8C1212124BB004D7BDD /* SCManagedVideoFileStreamer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoFileStreamer.m; sourceTree = "<group>"; };
+		F8EBA8C2212124BB004D7BDD /* SCManagedCaptureDeviceDefaultZoomHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceDefaultZoomHandler.m; sourceTree = "<group>"; };
+		F8EBA8C3212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedDeviceCapacityAnalyzer.m; sourceTree = "<group>"; };
+		F8EBA8C4212124BB004D7BDD /* SCStillImageCaptureVideoInputMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStillImageCaptureVideoInputMethod.h; sourceTree = "<group>"; };
+		F8EBA8C5212124BB004D7BDD /* SCCapturerToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCapturerToken.m; sourceTree = "<group>"; };
+		F8EBA8C6212124BB004D7BDD /* SCManagedCaptureDeviceHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceHandler.m; sourceTree = "<group>"; };
+		F8EBA8C7212124BB004D7BDD /* SCManagedCaptureFaceDetectionAdjustingPOIResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureFaceDetectionAdjustingPOIResource.h; sourceTree = "<group>"; };
+		F8EBA8C8212124BB004D7BDD /* SCManagedCapturerState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturerState.m; sourceTree = "<group>"; };
+		F8EBA8C9212124BB004D7BDD /* SCManagedVideoScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoScanner.h; sourceTree = "<group>"; };
+		F8EBA8CA212124BB004D7BDD /* SCManagedCapturerStateBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerStateBuilder.h; sourceTree = "<group>"; };
+		F8EBA8CB212124BB004D7BDD /* SCManagedVideoCapturerHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoCapturerHandler.h; sourceTree = "<group>"; };
+		F8EBA8CC212124BB004D7BDD /* SCManagedCaptureDeviceLinearInterpolationZoomHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceLinearInterpolationZoomHandler.m; sourceTree = "<group>"; };
+		F8EBA8CD212124BB004D7BDD /* SCManagedVideoCapturerOutputType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoCapturerOutputType.h; sourceTree = "<group>"; };
+		F8EBA8CE212124BB004D7BDD /* SCManagedDroppedFramesReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedDroppedFramesReporter.m; sourceTree = "<group>"; };
+		F8EBA8CF212124BB004D7BDD /* SCCapturerBufferedVideoWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCapturerBufferedVideoWriter.h; sourceTree = "<group>"; };
+		F8EBA8D0212124BB004D7BDD /* SCManagedCapturePreviewViewDebugView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturePreviewViewDebugView.m; sourceTree = "<group>"; };
+		F8EBA8D1212124BB004D7BDD /* SCCaptureCoreImageFaceDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureCoreImageFaceDetector.h; sourceTree = "<group>"; };
+		F8EBA8D2212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedDeviceCapacityAnalyzerHandler.h; sourceTree = "<group>"; };
+		F8EBA8D3212124BB004D7BDD /* SCManagedLegacyStillImageCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedLegacyStillImageCapturer.h; sourceTree = "<group>"; };
+		F8EBA8D4212124BB004D7BDD /* SCCapturerDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCapturerDefines.h; sourceTree = "<group>"; };
+		F8EBA8D5212124BB004D7BDD /* SCManagedCaptureDeviceThresholdExposureHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceThresholdExposureHandler.m; sourceTree = "<group>"; };
+		F8EBA8D6212124BB004D7BDD /* SCManagedCapturePreviewLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturePreviewLayerController.h; sourceTree = "<group>"; };
+		F8EBA8D7212124BB004D7BDD /* SCScanConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCScanConfiguration.h; sourceTree = "<group>"; };
+		F8EBA8D8212124BB004D7BDD /* SCManagedCaptureDeviceFaceDetectionAutoFocusHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceFaceDetectionAutoFocusHandler.h; sourceTree = "<group>"; };
+		F8EBA8DA212124BB004D7BDD /* SCStillImageDepthBlurFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStillImageDepthBlurFilter.h; sourceTree = "<group>"; };
+		F8EBA8DB212124BB004D7BDD /* SCDepthToGrayscaleMetalModule.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SCDepthToGrayscaleMetalModule.metal; sourceTree = "<group>"; };
+		F8EBA8DC212124BB004D7BDD /* SCDepthToGrayscaleMetalRenderCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDepthToGrayscaleMetalRenderCommand.h; sourceTree = "<group>"; };
+		F8EBA8DD212124BB004D7BDD /* SCProcessingModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProcessingModule.h; sourceTree = "<group>"; };
+		F8EBA8DE212124BB004D7BDD /* SCProcessingModuleUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCProcessingModuleUtils.m; sourceTree = "<group>"; };
+		F8EBA8DF212124BB004D7BDD /* SCProcessingPipeline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProcessingPipeline.h; sourceTree = "<group>"; };
+		F8EBA8E0212124BB004D7BDD /* SCNightModeEnhancementMetalModule.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SCNightModeEnhancementMetalModule.metal; sourceTree = "<group>"; };
+		F8EBA8E1212124BB004D7BDD /* SCExposureAdjustMetalModule.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SCExposureAdjustMetalModule.metal; sourceTree = "<group>"; };
+		F8EBA8E2212124BB004D7BDD /* SCDigitalExposureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDigitalExposureHandler.h; sourceTree = "<group>"; };
+		F8EBA8E3212124BB004D7BDD /* SCDepthBlurMetalRenderCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDepthBlurMetalRenderCommand.h; sourceTree = "<group>"; };
+		F8EBA8E4212124BB004D7BDD /* SCNightModeEnhancementMetalRenderCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCNightModeEnhancementMetalRenderCommand.m; sourceTree = "<group>"; };
+		F8EBA8E5212124BB004D7BDD /* SCMetalModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMetalModule.h; sourceTree = "<group>"; };
+		F8EBA8E6212124BB004D7BDD /* SCProcessingPipelineBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCProcessingPipelineBuilder.m; sourceTree = "<group>"; };
+		F8EBA8E7212124BB004D7BDD /* SCExposureAdjustMetalRenderCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCExposureAdjustMetalRenderCommand.h; sourceTree = "<group>"; };
+		F8EBA8E8212124BB004D7BDD /* SCMetalTextureResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMetalTextureResource.m; sourceTree = "<group>"; };
+		F8EBA8E9212124BB004D7BDD /* SCExposureAdjustProcessingModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCExposureAdjustProcessingModule.m; sourceTree = "<group>"; };
+		F8EBA8EA212124BB004D7BDD /* SCProcessingModuleUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProcessingModuleUtils.h; sourceTree = "<group>"; };
+		F8EBA8EB212124BB004D7BDD /* SCProcessingPipeline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCProcessingPipeline.m; sourceTree = "<group>"; };
+		F8EBA8EC212124BB004D7BDD /* SCDepthToGrayscaleMetalRenderCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDepthToGrayscaleMetalRenderCommand.m; sourceTree = "<group>"; };
+		F8EBA8ED212124BB004D7BDD /* SCStillImageDepthBlurFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStillImageDepthBlurFilter.m; sourceTree = "<group>"; };
+		F8EBA8EE212124BB004D7BDD /* SCProcessingPipelineBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProcessingPipelineBuilder.h; sourceTree = "<group>"; };
+		F8EBA8EF212124BB004D7BDD /* SCDepthBlurMetalModule.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SCDepthBlurMetalModule.metal; sourceTree = "<group>"; };
+		F8EBA8F0212124BB004D7BDD /* SCMetalModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMetalModule.m; sourceTree = "<group>"; };
+		F8EBA8F1212124BB004D7BDD /* SCNightModeEnhancementMetalRenderCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCNightModeEnhancementMetalRenderCommand.h; sourceTree = "<group>"; };
+		F8EBA8F2212124BB004D7BDD /* SCDepthBlurMetalRenderCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDepthBlurMetalRenderCommand.m; sourceTree = "<group>"; };
+		F8EBA8F3212124BB004D7BDD /* SCDigitalExposureHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDigitalExposureHandler.m; sourceTree = "<group>"; };
+		F8EBA8F4212124BB004D7BDD /* SCExposureAdjustProcessingModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCExposureAdjustProcessingModule.h; sourceTree = "<group>"; };
+		F8EBA8F5212124BB004D7BDD /* SCMetalTextureResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMetalTextureResource.h; sourceTree = "<group>"; };
+		F8EBA8F6212124BB004D7BDD /* SCExposureAdjustMetalRenderCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCExposureAdjustMetalRenderCommand.m; sourceTree = "<group>"; };
+		F8EBA8F7212124BB004D7BDD /* NSURL+Asset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Asset.h"; sourceTree = "<group>"; };
+		F8EBA8F8212124BB004D7BDD /* SCManagedRecordedVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedRecordedVideo.h; sourceTree = "<group>"; };
+		F8EBA8F9212124BB004D7BDD /* SCCaptureMetadataObjectParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureMetadataObjectParser.h; sourceTree = "<group>"; };
+		F8EBA8FA212124BB004D7BDD /* SCManagedCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturer.m; sourceTree = "<group>"; };
+		F8EBA8FB212124BB004D7BDD /* SCManagedCapturePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturePreviewView.m; sourceTree = "<group>"; };
+		F8EBA8FC212124BB004D7BDD /* SCManagedStillImageCapturerHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedStillImageCapturerHandler.h; sourceTree = "<group>"; };
+		F8EBA8FD212124BB004D7BDD /* SCManagedCaptureDeviceSubjectAreaHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceSubjectAreaHandler.h; sourceTree = "<group>"; };
+		F8EBA8FE212124BB004D7BDD /* SCManagedCaptureDeviceAutoFocusHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceAutoFocusHandler.m; sourceTree = "<group>"; };
+		F8EBA8FF212124BB004D7BDD /* SCMetalUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMetalUtils.h; sourceTree = "<group>"; };
+		F8EBA900212124BB004D7BDD /* SCManagedCaptureSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureSession.m; sourceTree = "<group>"; };
+		F8EBA901212124BB004D7BDD /* SCManagedFrameHealthChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedFrameHealthChecker.h; sourceTree = "<group>"; };
+		F8EBA902212124BB004D7BDD /* SCManagedRecordedVideo.value */ = {isa = PBXFileReference; lastKnownFileType = text; path = SCManagedRecordedVideo.value; sourceTree = "<group>"; };
+		F8EBA903212124BB004D7BDD /* ARConfiguration+SCConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ARConfiguration+SCConfiguration.m"; sourceTree = "<group>"; };
+		F8EBA904212124BB004D7BDD /* SCManagedCaptureDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDevice.m; sourceTree = "<group>"; };
+		F8EBA905212124BB004D7BDD /* SCManagedCaptureDeviceAutoExposureHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceAutoExposureHandler.m; sourceTree = "<group>"; };
+		F8EBA906212124BB004D7BDD /* SCManagedVideoNoSoundLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoNoSoundLogger.h; sourceTree = "<group>"; };
+		F8EBA907212124BB004D7BDD /* SCManagedCapturerARSessionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerARSessionHandler.h; sourceTree = "<group>"; };
+		F8EBA908212124BB004D7BDD /* SCCameraSettingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCameraSettingUtils.h; sourceTree = "<group>"; };
+		F8EBA909212124BB004D7BDD /* SCManagedCapturerState.value */ = {isa = PBXFileReference; lastKnownFileType = text; path = SCManagedCapturerState.value; sourceTree = "<group>"; };
+		F8EBA90A212124BB004D7BDD /* SCCapturerTokenProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCapturerTokenProvider.m; sourceTree = "<group>"; };
+		F8EBA90B212124BB004D7BDD /* SCManagedAudioStreamer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedAudioStreamer.m; sourceTree = "<group>"; };
+		F8EBA90C212124BB004D7BDD /* SCManagedCaptureDeviceLockOnRecordExposureHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceLockOnRecordExposureHandler.m; sourceTree = "<group>"; };
+		F8EBA90D212124BB004D7BDD /* SCManagedPhotoCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedPhotoCapturer.m; sourceTree = "<group>"; };
+		F8EBA90E212124BB004D7BDD /* SCManagedVideoFrameSampler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoFrameSampler.m; sourceTree = "<group>"; };
+		F8EBA90F212124BB004D7BDD /* SCManagedStillImageCapturer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SCManagedStillImageCapturer.mm; sourceTree = "<group>"; };
+		F8EBA910212124BB004D7BDD /* SCManagedCapturerSampleMetadata.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturerSampleMetadata.m; sourceTree = "<group>"; };
+		F8EBA911212124BB004D7BDD /* SCManagedCaptureDevice+SCManagedDeviceCapacityAnalyzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCManagedCaptureDevice+SCManagedDeviceCapacityAnalyzer.h"; sourceTree = "<group>"; };
+		F8EBA912212124BB004D7BDD /* SCFileAudioCaptureSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFileAudioCaptureSession.m; sourceTree = "<group>"; };
+		F8EBA915212124BB004D7BDD /* SCCaptureConfigurationAnnouncer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureConfigurationAnnouncer.h; sourceTree = "<group>"; };
+		F8EBA916212124BB004D7BDD /* SCCaptureConfigurationListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureConfigurationListener.h; sourceTree = "<group>"; };
+		F8EBA917212124BB004D7BDD /* SCCaptureConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureConfigurator.h; sourceTree = "<group>"; };
+		F8EBA918212124BB004D7BDD /* SCCaptureConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureConfiguration.h; sourceTree = "<group>"; };
+		F8EBA919212124BB004D7BDD /* SCCaptureConfiguration_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureConfiguration_Private.h; sourceTree = "<group>"; };
+		F8EBA91A212124BB004D7BDD /* SCCaptureConfigurationAnnouncer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureConfigurationAnnouncer.m; sourceTree = "<group>"; };
+		F8EBA91B212124BB004D7BDD /* SCCaptureConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureConfiguration.m; sourceTree = "<group>"; };
+		F8EBA91C212124BB004D7BDD /* SCCaptureConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureConfigurator.m; sourceTree = "<group>"; };
+		F8EBA91D212124BB004D7BDD /* SCCaptureConfigurationAnnouncer_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureConfigurationAnnouncer_Private.h; sourceTree = "<group>"; };
+		F8EBA91F212124BB004D7BDD /* SCCaptureCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureCore.h; sourceTree = "<group>"; };
+		F8EBA920212124BB004D7BDD /* SCCaptureCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureCore.m; sourceTree = "<group>"; };
+		F8EBA921212124BB004D7BDD /* UIScreen+Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Debug.h"; sourceTree = "<group>"; };
+		F8EBA922212124BB004D7BDD /* SCAudioCaptureSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAudioCaptureSession.h; sourceTree = "<group>"; };
+		F8EBA923212124BB004D7BDD /* SCCaptureDeviceAuthorizationChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureDeviceAuthorizationChecker.m; sourceTree = "<group>"; };
+		F8EBA924212124BB004D7BDD /* SCManagedCaptureDeviceFaceDetectionAutoExposureHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceFaceDetectionAutoExposureHandler.m; sourceTree = "<group>"; };
+		F8EBA925212124BB004D7BDD /* SCCaptureCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureCommon.h; sourceTree = "<group>"; };
+		F8EBA926212124BB004D7BDD /* SCManagedVideoStreamer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoStreamer.h; sourceTree = "<group>"; };
+		F8EBA927212124BB004D7BDD /* SCCaptureMetadataOutputDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureMetadataOutputDetector.m; sourceTree = "<group>"; };
+		F8EBA928212124BB004D7BDD /* AVCaptureConnection+InputDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureConnection+InputDevice.m"; sourceTree = "<group>"; };
+		F8EBA929212124BB004D7BDD /* SCCaptureDeviceResolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureDeviceResolver.h; sourceTree = "<group>"; };
+		F8EBA92A212124BB004D7BDD /* SCManagedVideoCapturerOutputSettings.value */ = {isa = PBXFileReference; lastKnownFileType = text; path = SCManagedVideoCapturerOutputSettings.value; sourceTree = "<group>"; };
+		F8EBA92B212124BB004D7BDD /* SCCaptureFaceDetectionParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureFaceDetectionParser.m; sourceTree = "<group>"; };
+		F8EBA92C212124BB004D7BDD /* SCCaptureDeviceAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureDeviceAuthorization.m; sourceTree = "<group>"; };
+		F8EBA92D212124BB004D7BDD /* AVCaptureDevice+ConfigurationLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+ConfigurationLock.h"; sourceTree = "<group>"; };
+		F8EBA92E212124BB004D7BDD /* SCManagedCapturerV1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturerV1.m; sourceTree = "<group>"; };
+		F8EBA92F212124BB004D7BDD /* SCCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCapturer.h; sourceTree = "<group>"; };
+		F8EBA930212124BB004D7BDD /* SCSingleFrameStreamCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSingleFrameStreamCapturer.m; sourceTree = "<group>"; };
+		F8EBA931212124BB004D7BDD /* OWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; path = OWNERS; sourceTree = "<group>"; };
+		F8EBA932212124BB004D7BDD /* SCManagedCapturerUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturerUtils.m; sourceTree = "<group>"; };
+		F8EBA933212124BB004D7BDD /* SCExposureState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCExposureState.h; sourceTree = "<group>"; };
+		F8EBA934212124BB004D7BDD /* SCStillImageCaptureVideoInputMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStillImageCaptureVideoInputMethod.m; sourceTree = "<group>"; };
+		F8EBA935212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedDeviceCapacityAnalyzer.h; sourceTree = "<group>"; };
+		F8EBA936212124BB004D7BDD /* SCManagedVideoFileStreamer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoFileStreamer.h; sourceTree = "<group>"; };
+		F8EBA937212124BB004D7BDD /* SCManagedCaptureDeviceDefaultZoomHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceDefaultZoomHandler.h; sourceTree = "<group>"; };
+		F8EBA938212124BB004D7BDD /* SCManagedFrontFlashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedFrontFlashController.m; sourceTree = "<group>"; };
+		F8EBA939212124BB004D7BDD /* SCManagedVideoCapturerLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoCapturerLogger.m; sourceTree = "<group>"; };
+		F8EBA93A212124BB004D7BDD /* SCTimedTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTimedTask.m; sourceTree = "<group>"; };
+		F8EBA93B212124BB004D7BDD /* SCManagedStillImageCapturer_Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedStillImageCapturer_Protected.h; sourceTree = "<group>"; };
+		F8EBA93C212124BB004D7BDD /* SCManagedCaptureDeviceSavitzkyGolayZoomHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceSavitzkyGolayZoomHandler.h; sourceTree = "<group>"; };
+		F8EBA93D212124BB004D7BDD /* SCManagedVideoStreamReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoStreamReporter.m; sourceTree = "<group>"; };
+		F8EBA93E212124BB004D7BDD /* SCManagedCaptureDeviceDefaultZoomHandler_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceDefaultZoomHandler_Private.h; sourceTree = "<group>"; };
+		F8EBA93F212124BB004D7BDD /* SCManagedVideoCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoCapturer.m; sourceTree = "<group>"; };
+		F8EBA940212124BB004D7BDD /* SCManagedVideoCapturerTimeObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoCapturerTimeObserver.h; sourceTree = "<group>"; };
+		F8EBA941212124BB004D7BDD /* SCCaptureFaceDetectorTrigger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureFaceDetectorTrigger.h; sourceTree = "<group>"; };
+		F8EBA942212124BB004D7BDD /* SCManagedVideoCapturerOutputSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedVideoCapturerOutputSettings.h; sourceTree = "<group>"; };
+		F8EBA943212124BB004D7BDD /* SCManagedCaptureDeviceThresholdExposureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceThresholdExposureHandler.h; sourceTree = "<group>"; };
+		F8EBA944212124BB004D7BDD /* SCManagedCapturePreviewLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturePreviewLayerController.m; sourceTree = "<group>"; };
+		F8EBA945212124BB004D7BDD /* SCScanConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCScanConfiguration.m; sourceTree = "<group>"; };
+		F8EBA946212124BB004D7BDD /* SCManagedCaptureDeviceFaceDetectionAutoFocusHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureDeviceFaceDetectionAutoFocusHandler.m; sourceTree = "<group>"; };
+		F8EBA947212124BB004D7BDD /* SCManagedLegacyStillImageCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedLegacyStillImageCapturer.m; sourceTree = "<group>"; };
+		F8EBA948212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedDeviceCapacityAnalyzerHandler.m; sourceTree = "<group>"; };
+		F8EBA949212124BB004D7BDD /* SCCaptureCoreImageFaceDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureCoreImageFaceDetector.m; sourceTree = "<group>"; };
+		F8EBA94A212124BB004D7BDD /* SCCapturerBufferedVideoWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCapturerBufferedVideoWriter.m; sourceTree = "<group>"; };
+		F8EBA94B212124BB004D7BDD /* SCManagedCapturePreviewViewDebugView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturePreviewViewDebugView.h; sourceTree = "<group>"; };
+		F8EBA94C212124BB004D7BDD /* SCManagedDroppedFramesReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedDroppedFramesReporter.h; sourceTree = "<group>"; };
+		F8EBA94D212124BB004D7BDD /* SCManagedCaptureDeviceLinearInterpolationZoomHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceLinearInterpolationZoomHandler.h; sourceTree = "<group>"; };
+		F8EBA94E212124BB004D7BDD /* SCManagedCapturerListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerListener.h; sourceTree = "<group>"; };
+		F8EBA94F212124BB004D7BDD /* SCManagedVideoCapturerHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoCapturerHandler.m; sourceTree = "<group>"; };
+		F8EBA950212124BB004D7BDD /* SCManagedCapturerStateBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCapturerStateBuilder.m; sourceTree = "<group>"; };
+		F8EBA951212124BB004D7BDD /* SCManagedCaptureFaceDetectionAdjustingPOIResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedCaptureFaceDetectionAdjustingPOIResource.m; sourceTree = "<group>"; };
+		F8EBA952212124BB004D7BDD /* SCManagedVideoScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCManagedVideoScanner.m; sourceTree = "<group>"; };
+		F8EBA953212124BB004D7BDD /* SCManagedCapturerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerState.h; sourceTree = "<group>"; };
+		F8EBA954212124BB004D7BDD /* SCManagedCaptureDeviceHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCaptureDeviceHandler.h; sourceTree = "<group>"; };
+		F8EBA955212124BB004D7BDD /* SCManagedCaptureDevice+SCManagedCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCManagedCaptureDevice+SCManagedCapturer.h"; sourceTree = "<group>"; };
+		F8EBA956212124BB004D7BDD /* SCCapturerToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCapturerToken.h; sourceTree = "<group>"; };
+		F8EBA957212124BB004D7BDD /* SCManagedCapturerListenerAnnouncer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManagedCapturerListenerAnnouncer.h; sourceTree = "<group>"; };
+		F8EBA958212124BB004D7BDD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F8EBA95A212124BC004D7BDD /* SCBlackCameraRunningDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBlackCameraRunningDetector.h; sourceTree = "<group>"; };
+		F8EBA95B212124BC004D7BDD /* SCBlackCameraViewDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBlackCameraViewDetector.h; sourceTree = "<group>"; };
+		F8EBA95C212124BC004D7BDD /* SCBlackCameraSessionBlockDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBlackCameraSessionBlockDetector.h; sourceTree = "<group>"; };
+		F8EBA95D212124BC004D7BDD /* SCBlackCameraReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBlackCameraReporter.m; sourceTree = "<group>"; };
+		F8EBA95E212124BC004D7BDD /* SCBlackCameraNoOutputDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBlackCameraNoOutputDetector.m; sourceTree = "<group>"; };
+		F8EBA95F212124BC004D7BDD /* SCCaptureSessionFixer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureSessionFixer.h; sourceTree = "<group>"; };
+		F8EBA960212124BC004D7BDD /* SCBlackCameraDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBlackCameraDetector.h; sourceTree = "<group>"; };
+		F8EBA961212124BC004D7BDD /* SCBlackCameraPreviewDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBlackCameraPreviewDetector.h; sourceTree = "<group>"; };
+		F8EBA962212124BC004D7BDD /* SCBlackCameraRunningDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBlackCameraRunningDetector.m; sourceTree = "<group>"; };
+		F8EBA963212124BC004D7BDD /* SCBlackCameraSessionBlockDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBlackCameraSessionBlockDetector.m; sourceTree = "<group>"; };
+		F8EBA964212124BC004D7BDD /* SCBlackCameraReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBlackCameraReporter.h; sourceTree = "<group>"; };
+		F8EBA965212124BC004D7BDD /* SCBlackCameraViewDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBlackCameraViewDetector.m; sourceTree = "<group>"; };
+		F8EBA966212124BC004D7BDD /* SCBlackCameraDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBlackCameraDetector.m; sourceTree = "<group>"; };
+		F8EBA967212124BC004D7BDD /* SCCaptureSessionFixer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureSessionFixer.m; sourceTree = "<group>"; };
+		F8EBA968212124BC004D7BDD /* SCBlackCameraNoOutputDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBlackCameraNoOutputDetector.h; sourceTree = "<group>"; };
+		F8EBA969212124BC004D7BDD /* SCBlackCameraPreviewDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBlackCameraPreviewDetector.m; sourceTree = "<group>"; };
+		F8EBA96B212124BC004D7BDD /* SCCoreCameraLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCoreCameraLogger.h; sourceTree = "<group>"; };
+		F8EBA96C212124BC004D7BDD /* SCLogger+Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCLogger+Camera.h"; sourceTree = "<group>"; };
+		F8EBA96D212124BC004D7BDD /* SCManiphestTicketCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCManiphestTicketCreator.h; sourceTree = "<group>"; };
+		F8EBA96E212124BC004D7BDD /* SCCoreCameraLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCoreCameraLogger.m; sourceTree = "<group>"; };
+		F8EBA96F212124BC004D7BDD /* SCLogger+Camera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCLogger+Camera.m"; sourceTree = "<group>"; };
+		F8EBA971212124BC004D7BDD /* SCLongPressGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		F8EBA972212124BC004D7BDD /* AVCameraViewEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCameraViewEnums.h; sourceTree = "<group>"; };
+		F8EBA973212124BC004D7BDD /* SCLongPressGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		F8EBA976212124BC004D7BDD /* SCFeatureLensButtonZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureLensButtonZ.h; sourceTree = "<group>"; };
+		F8EBA978212124BC004D7BDD /* SCFeatureLensSideButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureLensSideButton.h; sourceTree = "<group>"; };
+		F8EBA97A212124BC004D7BDD /* SCCaptureWorker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCaptureWorker.m; sourceTree = "<group>"; };
+		F8EBA97B212124BC004D7BDD /* SCCaptureWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCaptureWorker.h; sourceTree = "<group>"; };
+		F8EBA97D212124BC004D7BDD /* SCCameraTweaks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCameraTweaks.h; sourceTree = "<group>"; };
+		F8EBA97E212124BC004D7BDD /* SCCameraTweaks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCameraTweaks.m; sourceTree = "<group>"; };
+		F8EBA981212124BC004D7BDD /* SCFeatureContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureContainerView.h; sourceTree = "<group>"; };
+		F8EBA982212124BC004D7BDD /* SCFeatureCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureCoordinator.h; sourceTree = "<group>"; };
+		F8EBA983212124BC004D7BDD /* SCFeatureCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFeatureCoordinator.m; sourceTree = "<group>"; };
+		F8EBA984212124BC004D7BDD /* SCFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeature.h; sourceTree = "<group>"; };
+		F8EBA985212124BC004D7BDD /* SCFeatureProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureProvider.h; sourceTree = "<group>"; };
+		F8EBA987212124BC004D7BDD /* SCFeatureSnapKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureSnapKit.h; sourceTree = "<group>"; };
+		F8EBA989212124BC004D7BDD /* SCFeatureTapToFocusAndExposure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureTapToFocusAndExposure.h; sourceTree = "<group>"; };
+		F8EBA98A212124BC004D7BDD /* SCTapAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTapAnimationView.m; sourceTree = "<group>"; };
+		F8EBA98B212124BC004D7BDD /* SCFeatureTapToFocusAndExposureImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureTapToFocusAndExposureImpl.h; sourceTree = "<group>"; };
+		F8EBA98C212124BC004D7BDD /* SCTapAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTapAnimationView.h; sourceTree = "<group>"; };
+		F8EBA98D212124BC004D7BDD /* SCFeatureTapToFocusAndExposureImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFeatureTapToFocusAndExposureImpl.m; sourceTree = "<group>"; };
+		F8EBA98F212124BC004D7BDD /* SCFeatureScanning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureScanning.h; sourceTree = "<group>"; };
+		F8EBA991212124BC004D7BDD /* SCNightModeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCNightModeButton.m; sourceTree = "<group>"; };
+		F8EBA992212124BC004D7BDD /* SCFeatureNightMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureNightMode.h; sourceTree = "<group>"; };
+		F8EBA993212124BC004D7BDD /* SCNightModeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCNightModeButton.h; sourceTree = "<group>"; };
+		F8EBA995212124BC004D7BDD /* SCFeatureShazam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureShazam.h; sourceTree = "<group>"; };
+		F8EBA997212124BC004D7BDD /* SCFeatureFlashImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFeatureFlashImpl.m; sourceTree = "<group>"; };
+		F8EBA998212124BC004D7BDD /* SCFeatureFlash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureFlash.h; sourceTree = "<group>"; };
+		F8EBA999212124BC004D7BDD /* SCFlashButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFlashButton.m; sourceTree = "<group>"; };
+		F8EBA99A212124BC004D7BDD /* SCFeatureFlashImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureFlashImpl.h; sourceTree = "<group>"; };
+		F8EBA99B212124BC004D7BDD /* SCFlashButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFlashButton.h; sourceTree = "<group>"; };
+		F8EBA99D212124BC004D7BDD /* SCFeatureHandsFree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureHandsFree.h; sourceTree = "<group>"; };
+		F8EBA99F212124BC004D7BDD /* SCFeatureImageCaptureImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFeatureImageCaptureImpl.m; sourceTree = "<group>"; };
+		F8EBA9A0212124BC004D7BDD /* SCFeatureImageCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureImageCapture.h; sourceTree = "<group>"; };
+		F8EBA9A1212124BC004D7BDD /* SCFeatureImageCaptureImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureImageCaptureImpl.h; sourceTree = "<group>"; };
+		F8EBA9A3212124BC004D7BDD /* SCFeatureToggleCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureToggleCamera.h; sourceTree = "<group>"; };
+		F8EBA9A5212124BC004D7BDD /* SCFeatureZooming.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeatureZooming.h; sourceTree = "<group>"; };
+		F8EBA9A7212124BC004D7BDD /* SCCameraVolumeButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCameraVolumeButtonHandler.h; sourceTree = "<group>"; };
+		F8EBA9A8212124BC004D7BDD /* SCCameraVolumeButtonHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCameraVolumeButtonHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F8EBA84A212124AE004D7BDD = {
+			isa = PBXGroup;
+			children = (
+				F8EBA959212124BC004D7BDD /* BlackCamera */,
+				F8EBA85A212124BB004D7BDD /* ContextAwareTaskManagement */,
+				F8EBA97F212124BC004D7BDD /* Features */,
+				F8EBA854212124BB004D7BDD /* Lens */,
+				F8EBA96A212124BC004D7BDD /* Logging */,
+				F8EBA862212124BB004D7BDD /* ManagedCapturer */,
+				F8EBA851212124BB004D7BDD /* Resource */,
+				F8EBA97C212124BC004D7BDD /* Tweaks */,
+				F8EBA970212124BC004D7BDD /* UI */,
+				F8EBA9A6212124BC004D7BDD /* VolumeButton */,
+				F8EBA979212124BC004D7BDD /* Worker */,
+				F8EBA958212124BB004D7BDD /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		F8EBA851212124BB004D7BDD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA852212124BB004D7BDD /* SCCaptureResource.h */,
+				F8EBA853212124BB004D7BDD /* SCCaptureResource.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F8EBA854212124BB004D7BDD /* Lens */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA856212124BB004D7BDD /* SCManagedCapturerARImageCaptureProvider.h */,
+				F8EBA855212124BB004D7BDD /* SCManagedCapturerGLViewManagerAPI.h */,
+				F8EBA858212124BB004D7BDD /* SCManagedCapturerLSAComponentTrackerAPI.h */,
+				F8EBA859212124BB004D7BDD /* SCManagedCapturerLensAPI.h */,
+				F8EBA857212124BB004D7BDD /* SCManagedCapturerLensAPIProvider.h */,
+			);
+			path = Lens;
+			sourceTree = "<group>";
+		};
+		F8EBA85A212124BB004D7BDD /* ContextAwareTaskManagement */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA861212124BB004D7BDD /* OWNERS */,
+				F8EBA85E212124BB004D7BDD /* Requests */,
+				F8EBA85B212124BB004D7BDD /* Triggers */,
+			);
+			path = ContextAwareTaskManagement;
+			sourceTree = "<group>";
+		};
+		F8EBA85B212124BB004D7BDD /* Triggers */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA85D212124BB004D7BDD /* SCSnapCreationTriggers.h */,
+				F8EBA85C212124BB004D7BDD /* SCSnapCreationTriggers.m */,
+			);
+			path = Triggers;
+			sourceTree = "<group>";
+		};
+		F8EBA85E212124BB004D7BDD /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA860212124BB004D7BDD /* SCContextAwareSnapCreationThrottleRequest.h */,
+				F8EBA85F212124BB004D7BDD /* SCContextAwareSnapCreationThrottleRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F8EBA862212124BB004D7BDD /* ManagedCapturer */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA913212124BB004D7BDD /* CapturerV2 */,
+				F8EBA8D9212124BB004D7BDD /* ImageProcessing */,
+				F8EBA931212124BB004D7BDD /* OWNERS */,
+				F8EBA89B212124BB004D7BDD /* StateMachine */,
+				F8EBA86A212124BB004D7BDD /* ARConfiguration+SCConfiguration.h */,
+				F8EBA903212124BB004D7BDD /* ARConfiguration+SCConfiguration.m */,
+				F8EBA884212124BB004D7BDD /* AVCaptureConnection+InputDevice.h */,
+				F8EBA928212124BB004D7BDD /* AVCaptureConnection+InputDevice.m */,
+				F8EBA92D212124BB004D7BDD /* AVCaptureDevice+ConfigurationLock.h */,
+				F8EBA87F212124BB004D7BDD /* AVCaptureDevice+ConfigurationLock.m */,
+				F8EBA8F7212124BB004D7BDD /* NSURL+Asset.h */,
+				F8EBA878212124BB004D7BDD /* NSURL+Asset.m */,
+				F8EBA922212124BB004D7BDD /* SCAudioCaptureSession.h */,
+				F8EBA88B212124BB004D7BDD /* SCAudioCaptureSession.m */,
+				F8EBA908212124BB004D7BDD /* SCCameraSettingUtils.h */,
+				F8EBA866212124BB004D7BDD /* SCCameraSettingUtils.m */,
+				F8EBA925212124BB004D7BDD /* SCCaptureCommon.h */,
+				F8EBA887212124BB004D7BDD /* SCCaptureCommon.m */,
+				F8EBA8D1212124BB004D7BDD /* SCCaptureCoreImageFaceDetector.h */,
+				F8EBA949212124BB004D7BDD /* SCCaptureCoreImageFaceDetector.m */,
+				F8EBA881212124BB004D7BDD /* SCCaptureDeviceAuthorization.h */,
+				F8EBA92C212124BB004D7BDD /* SCCaptureDeviceAuthorization.m */,
+				F8EBA88A212124BB004D7BDD /* SCCaptureDeviceAuthorizationChecker.h */,
+				F8EBA923212124BB004D7BDD /* SCCaptureDeviceAuthorizationChecker.m */,
+				F8EBA929212124BB004D7BDD /* SCCaptureDeviceResolver.h */,
+				F8EBA883212124BB004D7BDD /* SCCaptureDeviceResolver.m */,
+				F8EBA882212124BB004D7BDD /* SCCaptureFaceDetectionParser.h */,
+				F8EBA92B212124BB004D7BDD /* SCCaptureFaceDetectionParser.m */,
+				F8EBA893212124BB004D7BDD /* SCCaptureFaceDetector.h */,
+				F8EBA941212124BB004D7BDD /* SCCaptureFaceDetectorTrigger.h */,
+				F8EBA895212124BB004D7BDD /* SCCaptureFaceDetectorTrigger.m */,
+				F8EBA8F9212124BB004D7BDD /* SCCaptureMetadataObjectParser.h */,
+				F8EBA876212124BB004D7BDD /* SCCaptureMetadataObjectParser.m */,
+				F8EBA885212124BB004D7BDD /* SCCaptureMetadataOutputDetector.h */,
+				F8EBA927212124BB004D7BDD /* SCCaptureMetadataOutputDetector.m */,
+				F8EBA92F212124BB004D7BDD /* SCCapturer.h */,
+				F8EBA8CF212124BB004D7BDD /* SCCapturerBufferedVideoWriter.h */,
+				F8EBA94A212124BB004D7BDD /* SCCapturerBufferedVideoWriter.m */,
+				F8EBA8D4212124BB004D7BDD /* SCCapturerDefines.h */,
+				F8EBA956212124BB004D7BDD /* SCCapturerToken.h */,
+				F8EBA8C5212124BB004D7BDD /* SCCapturerToken.m */,
+				F8EBA863212124BB004D7BDD /* SCCapturerTokenProvider.h */,
+				F8EBA90A212124BB004D7BDD /* SCCapturerTokenProvider.m */,
+				F8EBA933212124BB004D7BDD /* SCExposureState.h */,
+				F8EBA87A212124BB004D7BDD /* SCExposureState.m */,
+				F8EBA88D212124BB004D7BDD /* SCFileAudioCaptureSession.h */,
+				F8EBA912212124BB004D7BDD /* SCFileAudioCaptureSession.m */,
+				F8EBA864212124BB004D7BDD /* SCManagedAudioStreamer.h */,
+				F8EBA90B212124BB004D7BDD /* SCManagedAudioStreamer.m */,
+				F8EBA955212124BB004D7BDD /* SCManagedCaptureDevice+SCManagedCapturer.h */,
+				F8EBA911212124BB004D7BDD /* SCManagedCaptureDevice+SCManagedDeviceCapacityAnalyzer.h */,
+				F8EBA86B212124BB004D7BDD /* SCManagedCaptureDevice.h */,
+				F8EBA904212124BB004D7BDD /* SCManagedCaptureDevice.m */,
+				F8EBA868212124BB004D7BDD /* SCManagedCaptureDeviceAutoExposureHandler.h */,
+				F8EBA905212124BB004D7BDD /* SCManagedCaptureDeviceAutoExposureHandler.m */,
+				F8EBA86D212124BB004D7BDD /* SCManagedCaptureDeviceAutoFocusHandler.h */,
+				F8EBA8FE212124BB004D7BDD /* SCManagedCaptureDeviceAutoFocusHandler.m */,
+				F8EBA937212124BB004D7BDD /* SCManagedCaptureDeviceDefaultZoomHandler.h */,
+				F8EBA8C2212124BB004D7BDD /* SCManagedCaptureDeviceDefaultZoomHandler.m */,
+				F8EBA93E212124BB004D7BDD /* SCManagedCaptureDeviceDefaultZoomHandler_Private.h */,
+				F8EBA899212124BB004D7BDD /* SCManagedCaptureDeviceExposureHandler.h */,
+				F8EBA886212124BB004D7BDD /* SCManagedCaptureDeviceFaceDetectionAutoExposureHandler.h */,
+				F8EBA924212124BB004D7BDD /* SCManagedCaptureDeviceFaceDetectionAutoExposureHandler.m */,
+				F8EBA8D8212124BB004D7BDD /* SCManagedCaptureDeviceFaceDetectionAutoFocusHandler.h */,
+				F8EBA946212124BB004D7BDD /* SCManagedCaptureDeviceFaceDetectionAutoFocusHandler.m */,
+				F8EBA867212124BB004D7BDD /* SCManagedCaptureDeviceFocusHandler.h */,
+				F8EBA954212124BB004D7BDD /* SCManagedCaptureDeviceHandler.h */,
+				F8EBA8C6212124BB004D7BDD /* SCManagedCaptureDeviceHandler.m */,
+				F8EBA94D212124BB004D7BDD /* SCManagedCaptureDeviceLinearInterpolationZoomHandler.h */,
+				F8EBA8CC212124BB004D7BDD /* SCManagedCaptureDeviceLinearInterpolationZoomHandler.m */,
+				F8EBA891212124BB004D7BDD /* SCManagedCaptureDeviceLockOnRecordExposureHandler.h */,
+				F8EBA90C212124BB004D7BDD /* SCManagedCaptureDeviceLockOnRecordExposureHandler.m */,
+				F8EBA93C212124BB004D7BDD /* SCManagedCaptureDeviceSavitzkyGolayZoomHandler.h */,
+				F8EBA8BD212124BB004D7BDD /* SCManagedCaptureDeviceSavitzkyGolayZoomHandler.m */,
+				F8EBA8FD212124BB004D7BDD /* SCManagedCaptureDeviceSubjectAreaHandler.h */,
+				F8EBA872212124BB004D7BDD /* SCManagedCaptureDeviceSubjectAreaHandler.m */,
+				F8EBA943212124BB004D7BDD /* SCManagedCaptureDeviceThresholdExposureHandler.h */,
+				F8EBA8D5212124BB004D7BDD /* SCManagedCaptureDeviceThresholdExposureHandler.m */,
+				F8EBA8C7212124BB004D7BDD /* SCManagedCaptureFaceDetectionAdjustingPOIResource.h */,
+				F8EBA951212124BB004D7BDD /* SCManagedCaptureFaceDetectionAdjustingPOIResource.m */,
+				F8EBA8D6212124BB004D7BDD /* SCManagedCapturePreviewLayerController.h */,
+				F8EBA944212124BB004D7BDD /* SCManagedCapturePreviewLayerController.m */,
+				F8EBA874212124BB004D7BDD /* SCManagedCapturePreviewView.h */,
+				F8EBA8FB212124BB004D7BDD /* SCManagedCapturePreviewView.m */,
+				F8EBA94B212124BB004D7BDD /* SCManagedCapturePreviewViewDebugView.h */,
+				F8EBA8D0212124BB004D7BDD /* SCManagedCapturePreviewViewDebugView.m */,
+				F8EBA86F212124BB004D7BDD /* SCManagedCaptureSession.h */,
+				F8EBA900212124BB004D7BDD /* SCManagedCaptureSession.m */,
+				F8EBA873212124BB004D7BDD /* SCManagedCapturer.h */,
+				F8EBA8FA212124BB004D7BDD /* SCManagedCapturer.m */,
+				F8EBA907212124BB004D7BDD /* SCManagedCapturerARSessionHandler.h */,
+				F8EBA865212124BB004D7BDD /* SCManagedCapturerARSessionHandler.m */,
+				F8EBA94E212124BB004D7BDD /* SCManagedCapturerListener.h */,
+				F8EBA957212124BB004D7BDD /* SCManagedCapturerListenerAnnouncer.h */,
+				F8EBA870212124BB004D7BDD /* SCManagedCapturerListenerAnnouncer.mm */,
+				F8EBA88E212124BB004D7BDD /* SCManagedCapturerSampleMetadata.h */,
+				F8EBA910212124BB004D7BDD /* SCManagedCapturerSampleMetadata.m */,
+				F8EBA953212124BB004D7BDD /* SCManagedCapturerState.h */,
+				F8EBA8C8212124BB004D7BDD /* SCManagedCapturerState.m */,
+				F8EBA909212124BB004D7BDD /* SCManagedCapturerState.value */,
+				F8EBA8CA212124BB004D7BDD /* SCManagedCapturerStateBuilder.h */,
+				F8EBA950212124BB004D7BDD /* SCManagedCapturerStateBuilder.m */,
+				F8EBA87C212124BB004D7BDD /* SCManagedCapturerUtils.h */,
+				F8EBA932212124BB004D7BDD /* SCManagedCapturerUtils.m */,
+				F8EBA87D212124BB004D7BDD /* SCManagedCapturerV1.h */,
+				F8EBA92E212124BB004D7BDD /* SCManagedCapturerV1.m */,
+				F8EBA889212124BB004D7BDD /* SCManagedCapturerV1_Private.h */,
+				F8EBA935212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzer.h */,
+				F8EBA8C3212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzer.m */,
+				F8EBA8D2212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerHandler.h */,
+				F8EBA948212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerHandler.m */,
+				F8EBA879212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerListener.h */,
+				F8EBA880212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerListenerAnnouncer.h */,
+				F8EBA892212124BB004D7BDD /* SCManagedDeviceCapacityAnalyzerListenerAnnouncer.mm */,
+				F8EBA94C212124BB004D7BDD /* SCManagedDroppedFramesReporter.h */,
+				F8EBA8CE212124BB004D7BDD /* SCManagedDroppedFramesReporter.m */,
+				F8EBA901212124BB004D7BDD /* SCManagedFrameHealthChecker.h */,
+				F8EBA86E212124BB004D7BDD /* SCManagedFrameHealthChecker.m */,
+				F8EBA8C0212124BB004D7BDD /* SCManagedFrontFlashController.h */,
+				F8EBA938212124BB004D7BDD /* SCManagedFrontFlashController.m */,
+				F8EBA8D3212124BB004D7BDD /* SCManagedLegacyStillImageCapturer.h */,
+				F8EBA947212124BB004D7BDD /* SCManagedLegacyStillImageCapturer.m */,
+				F8EBA88F212124BB004D7BDD /* SCManagedPhotoCapturer.h */,
+				F8EBA90D212124BB004D7BDD /* SCManagedPhotoCapturer.m */,
+				F8EBA8F8212124BB004D7BDD /* SCManagedRecordedVideo.h */,
+				F8EBA875212124BB004D7BDD /* SCManagedRecordedVideo.m */,
+				F8EBA902212124BB004D7BDD /* SCManagedRecordedVideo.value */,
+				F8EBA877212124BB004D7BDD /* SCManagedStillImageCapturer.h */,
+				F8EBA90F212124BB004D7BDD /* SCManagedStillImageCapturer.mm */,
+				F8EBA8FC212124BB004D7BDD /* SCManagedStillImageCapturerHandler.h */,
+				F8EBA871212124BB004D7BDD /* SCManagedStillImageCapturerHandler.m */,
+				F8EBA93B212124BB004D7BDD /* SCManagedStillImageCapturer_Protected.h */,
+				F8EBA87E212124BB004D7BDD /* SCManagedVideoARDataSource.h */,
+				F8EBA898212124BB004D7BDD /* SCManagedVideoCapturer.h */,
+				F8EBA93F212124BB004D7BDD /* SCManagedVideoCapturer.m */,
+				F8EBA8CB212124BB004D7BDD /* SCManagedVideoCapturerHandler.h */,
+				F8EBA94F212124BB004D7BDD /* SCManagedVideoCapturerHandler.m */,
+				F8EBA8BF212124BB004D7BDD /* SCManagedVideoCapturerLogger.h */,
+				F8EBA939212124BB004D7BDD /* SCManagedVideoCapturerLogger.m */,
+				F8EBA942212124BB004D7BDD /* SCManagedVideoCapturerOutputSettings.h */,
+				F8EBA894212124BB004D7BDD /* SCManagedVideoCapturerOutputSettings.m */,
+				F8EBA92A212124BB004D7BDD /* SCManagedVideoCapturerOutputSettings.value */,
+				F8EBA8CD212124BB004D7BDD /* SCManagedVideoCapturerOutputType.h */,
+				F8EBA940212124BB004D7BDD /* SCManagedVideoCapturerTimeObserver.h */,
+				F8EBA897212124BB004D7BDD /* SCManagedVideoCapturerTimeObserver.m */,
+				F8EBA936212124BB004D7BDD /* SCManagedVideoFileStreamer.h */,
+				F8EBA8C1212124BB004D7BDD /* SCManagedVideoFileStreamer.m */,
+				F8EBA890212124BB004D7BDD /* SCManagedVideoFrameSampler.h */,
+				F8EBA90E212124BB004D7BDD /* SCManagedVideoFrameSampler.m */,
+				F8EBA906212124BB004D7BDD /* SCManagedVideoNoSoundLogger.h */,
+				F8EBA869212124BB004D7BDD /* SCManagedVideoNoSoundLogger.m */,
+				F8EBA8C9212124BB004D7BDD /* SCManagedVideoScanner.h */,
+				F8EBA952212124BB004D7BDD /* SCManagedVideoScanner.m */,
+				F8EBA89A212124BB004D7BDD /* SCManagedVideoStreamReporter.h */,
+				F8EBA93D212124BB004D7BDD /* SCManagedVideoStreamReporter.m */,
+				F8EBA926212124BB004D7BDD /* SCManagedVideoStreamer.h */,
+				F8EBA888212124BB004D7BDD /* SCManagedVideoStreamer.m */,
+				F8EBA8FF212124BB004D7BDD /* SCMetalUtils.h */,
+				F8EBA86C212124BB004D7BDD /* SCMetalUtils.m */,
+				F8EBA8D7212124BB004D7BDD /* SCScanConfiguration.h */,
+				F8EBA945212124BB004D7BDD /* SCScanConfiguration.m */,
+				F8EBA87B212124BB004D7BDD /* SCSingleFrameStreamCapturer.h */,
+				F8EBA930212124BB004D7BDD /* SCSingleFrameStreamCapturer.m */,
+				F8EBA8C4212124BB004D7BDD /* SCStillImageCaptureVideoInputMethod.h */,
+				F8EBA934212124BB004D7BDD /* SCStillImageCaptureVideoInputMethod.m */,
+				F8EBA8BE212124BB004D7BDD /* SCTimedTask.h */,
+				F8EBA93A212124BB004D7BDD /* SCTimedTask.m */,
+				F8EBA896212124BB004D7BDD /* SCVideoCaptureSessionInfo.h */,
+				F8EBA921212124BB004D7BDD /* UIScreen+Debug.h */,
+				F8EBA88C212124BB004D7BDD /* UIScreen+Debug.m */,
+			);
+			path = ManagedCapturer;
+			sourceTree = "<group>";
+		};
+		F8EBA89B212124BB004D7BDD /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA8A5212124BB004D7BDD /* States */,
+				F8EBA8A4212124BB004D7BDD /* SCCaptureBaseState.h */,
+				F8EBA89E212124BB004D7BDD /* SCCaptureBaseState.m */,
+				F8EBA8A1212124BB004D7BDD /* SCCaptureStateDelegate.h */,
+				F8EBA8A3212124BB004D7BDD /* SCCaptureStateMachineBookKeeper.h */,
+				F8EBA89F212124BB004D7BDD /* SCCaptureStateMachineBookKeeper.m */,
+				F8EBA8BC212124BB004D7BDD /* SCCaptureStateMachineContext.h */,
+				F8EBA89D212124BB004D7BDD /* SCCaptureStateMachineContext.m */,
+				F8EBA8A2212124BB004D7BDD /* SCCaptureStateUtil.h */,
+				F8EBA8A0212124BB004D7BDD /* SCCaptureStateUtil.m */,
+				F8EBA89C212124BB004D7BDD /* SCManagedCapturerLogging.h */,
+			);
+			path = StateMachine;
+			sourceTree = "<group>";
+		};
+		F8EBA8A5212124BB004D7BDD /* States */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA8BA212124BB004D7BDD /* SCCaptureImageState.h */,
+				F8EBA8AA212124BB004D7BDD /* SCCaptureImageState.m */,
+				F8EBA8BB212124BB004D7BDD /* SCCaptureImageStateTransitionPayload.h */,
+				F8EBA8B0212124BB004D7BDD /* SCCaptureImageStateTransitionPayload.m */,
+				F8EBA8A8212124BB004D7BDD /* SCCaptureImageWhileRecordingState.h */,
+				F8EBA8B1212124BB004D7BDD /* SCCaptureImageWhileRecordingState.m */,
+				F8EBA8B7212124BB004D7BDD /* SCCaptureImageWhileRecordingStateTransitionPayload.h */,
+				F8EBA8AD212124BB004D7BDD /* SCCaptureImageWhileRecordingStateTransitionPayload.m */,
+				F8EBA8A7212124BB004D7BDD /* SCCaptureInitializedState.h */,
+				F8EBA8B2212124BB004D7BDD /* SCCaptureInitializedState.m */,
+				F8EBA8B3212124BB004D7BDD /* SCCaptureRecordingState.h */,
+				F8EBA8A6212124BB004D7BDD /* SCCaptureRecordingState.m */,
+				F8EBA8B5212124BB004D7BDD /* SCCaptureRecordingStateTransitionPayload.h */,
+				F8EBA8AF212124BB004D7BDD /* SCCaptureRecordingStateTransitionPayload.m */,
+				F8EBA8A9212124BB004D7BDD /* SCCaptureRunningState.h */,
+				F8EBA8B4212124BB004D7BDD /* SCCaptureRunningState.m */,
+				F8EBA8AC212124BB004D7BDD /* SCCaptureScanningState.h */,
+				F8EBA8B8212124BB004D7BDD /* SCCaptureScanningState.m */,
+				F8EBA8B9212124BB004D7BDD /* SCCaptureUninitializedState.h */,
+				F8EBA8AB212124BB004D7BDD /* SCCaptureUninitializedState.m */,
+				F8EBA8AE212124BB004D7BDD /* SCStateTransitionPayload.h */,
+				F8EBA8B6212124BB004D7BDD /* SCStateTransitionPayload.m */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		F8EBA8D9212124BB004D7BDD /* ImageProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA8EF212124BB004D7BDD /* SCDepthBlurMetalModule.metal */,
+				F8EBA8E3212124BB004D7BDD /* SCDepthBlurMetalRenderCommand.h */,
+				F8EBA8F2212124BB004D7BDD /* SCDepthBlurMetalRenderCommand.m */,
+				F8EBA8DB212124BB004D7BDD /* SCDepthToGrayscaleMetalModule.metal */,
+				F8EBA8DC212124BB004D7BDD /* SCDepthToGrayscaleMetalRenderCommand.h */,
+				F8EBA8EC212124BB004D7BDD /* SCDepthToGrayscaleMetalRenderCommand.m */,
+				F8EBA8E2212124BB004D7BDD /* SCDigitalExposureHandler.h */,
+				F8EBA8F3212124BB004D7BDD /* SCDigitalExposureHandler.m */,
+				F8EBA8E1212124BB004D7BDD /* SCExposureAdjustMetalModule.metal */,
+				F8EBA8E7212124BB004D7BDD /* SCExposureAdjustMetalRenderCommand.h */,
+				F8EBA8F6212124BB004D7BDD /* SCExposureAdjustMetalRenderCommand.m */,
+				F8EBA8F4212124BB004D7BDD /* SCExposureAdjustProcessingModule.h */,
+				F8EBA8E9212124BB004D7BDD /* SCExposureAdjustProcessingModule.m */,
+				F8EBA8E5212124BB004D7BDD /* SCMetalModule.h */,
+				F8EBA8F0212124BB004D7BDD /* SCMetalModule.m */,
+				F8EBA8F5212124BB004D7BDD /* SCMetalTextureResource.h */,
+				F8EBA8E8212124BB004D7BDD /* SCMetalTextureResource.m */,
+				F8EBA8E0212124BB004D7BDD /* SCNightModeEnhancementMetalModule.metal */,
+				F8EBA8F1212124BB004D7BDD /* SCNightModeEnhancementMetalRenderCommand.h */,
+				F8EBA8E4212124BB004D7BDD /* SCNightModeEnhancementMetalRenderCommand.m */,
+				F8EBA8DD212124BB004D7BDD /* SCProcessingModule.h */,
+				F8EBA8EA212124BB004D7BDD /* SCProcessingModuleUtils.h */,
+				F8EBA8DE212124BB004D7BDD /* SCProcessingModuleUtils.m */,
+				F8EBA8DF212124BB004D7BDD /* SCProcessingPipeline.h */,
+				F8EBA8EB212124BB004D7BDD /* SCProcessingPipeline.m */,
+				F8EBA8EE212124BB004D7BDD /* SCProcessingPipelineBuilder.h */,
+				F8EBA8E6212124BB004D7BDD /* SCProcessingPipelineBuilder.m */,
+				F8EBA8DA212124BB004D7BDD /* SCStillImageDepthBlurFilter.h */,
+				F8EBA8ED212124BB004D7BDD /* SCStillImageDepthBlurFilter.m */,
+			);
+			path = ImageProcessing;
+			sourceTree = "<group>";
+		};
+		F8EBA913212124BB004D7BDD /* CapturerV2 */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA914212124BB004D7BDD /* Configuration */,
+				F8EBA91E212124BB004D7BDD /* Core */,
+			);
+			path = CapturerV2;
+			sourceTree = "<group>";
+		};
+		F8EBA914212124BB004D7BDD /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA918212124BB004D7BDD /* SCCaptureConfiguration.h */,
+				F8EBA91B212124BB004D7BDD /* SCCaptureConfiguration.m */,
+				F8EBA915212124BB004D7BDD /* SCCaptureConfigurationAnnouncer.h */,
+				F8EBA91A212124BB004D7BDD /* SCCaptureConfigurationAnnouncer.m */,
+				F8EBA91D212124BB004D7BDD /* SCCaptureConfigurationAnnouncer_Private.h */,
+				F8EBA916212124BB004D7BDD /* SCCaptureConfigurationListener.h */,
+				F8EBA919212124BB004D7BDD /* SCCaptureConfiguration_Private.h */,
+				F8EBA917212124BB004D7BDD /* SCCaptureConfigurator.h */,
+				F8EBA91C212124BB004D7BDD /* SCCaptureConfigurator.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F8EBA91E212124BB004D7BDD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA91F212124BB004D7BDD /* SCCaptureCore.h */,
+				F8EBA920212124BB004D7BDD /* SCCaptureCore.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F8EBA959212124BC004D7BDD /* BlackCamera */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA960212124BC004D7BDD /* SCBlackCameraDetector.h */,
+				F8EBA966212124BC004D7BDD /* SCBlackCameraDetector.m */,
+				F8EBA968212124BC004D7BDD /* SCBlackCameraNoOutputDetector.h */,
+				F8EBA95E212124BC004D7BDD /* SCBlackCameraNoOutputDetector.m */,
+				F8EBA961212124BC004D7BDD /* SCBlackCameraPreviewDetector.h */,
+				F8EBA969212124BC004D7BDD /* SCBlackCameraPreviewDetector.m */,
+				F8EBA964212124BC004D7BDD /* SCBlackCameraReporter.h */,
+				F8EBA95D212124BC004D7BDD /* SCBlackCameraReporter.m */,
+				F8EBA95A212124BC004D7BDD /* SCBlackCameraRunningDetector.h */,
+				F8EBA962212124BC004D7BDD /* SCBlackCameraRunningDetector.m */,
+				F8EBA95C212124BC004D7BDD /* SCBlackCameraSessionBlockDetector.h */,
+				F8EBA963212124BC004D7BDD /* SCBlackCameraSessionBlockDetector.m */,
+				F8EBA95B212124BC004D7BDD /* SCBlackCameraViewDetector.h */,
+				F8EBA965212124BC004D7BDD /* SCBlackCameraViewDetector.m */,
+				F8EBA95F212124BC004D7BDD /* SCCaptureSessionFixer.h */,
+				F8EBA967212124BC004D7BDD /* SCCaptureSessionFixer.m */,
+			);
+			path = BlackCamera;
+			sourceTree = "<group>";
+		};
+		F8EBA96A212124BC004D7BDD /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA96B212124BC004D7BDD /* SCCoreCameraLogger.h */,
+				F8EBA96E212124BC004D7BDD /* SCCoreCameraLogger.m */,
+				F8EBA96C212124BC004D7BDD /* SCLogger+Camera.h */,
+				F8EBA96F212124BC004D7BDD /* SCLogger+Camera.m */,
+				F8EBA96D212124BC004D7BDD /* SCManiphestTicketCreator.h */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		F8EBA970212124BC004D7BDD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA974212124BC004D7BDD /* Lenses */,
+				F8EBA972212124BC004D7BDD /* AVCameraViewEnums.h */,
+				F8EBA973212124BC004D7BDD /* SCLongPressGestureRecognizer.h */,
+				F8EBA971212124BC004D7BDD /* SCLongPressGestureRecognizer.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F8EBA974212124BC004D7BDD /* Lenses */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA975212124BC004D7BDD /* LensButtonZ */,
+				F8EBA977212124BC004D7BDD /* LensSideButton */,
+			);
+			path = Lenses;
+			sourceTree = "<group>";
+		};
+		F8EBA975212124BC004D7BDD /* LensButtonZ */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA976212124BC004D7BDD /* SCFeatureLensButtonZ.h */,
+			);
+			path = LensButtonZ;
+			sourceTree = "<group>";
+		};
+		F8EBA977212124BC004D7BDD /* LensSideButton */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA978212124BC004D7BDD /* SCFeatureLensSideButton.h */,
+			);
+			path = LensSideButton;
+			sourceTree = "<group>";
+		};
+		F8EBA979212124BC004D7BDD /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA97B212124BC004D7BDD /* SCCaptureWorker.h */,
+				F8EBA97A212124BC004D7BDD /* SCCaptureWorker.m */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		F8EBA97C212124BC004D7BDD /* Tweaks */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA97D212124BC004D7BDD /* SCCameraTweaks.h */,
+				F8EBA97E212124BC004D7BDD /* SCCameraTweaks.m */,
+			);
+			path = Tweaks;
+			sourceTree = "<group>";
+		};
+		F8EBA97F212124BC004D7BDD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA980212124BC004D7BDD /* Core */,
+				F8EBA996212124BC004D7BDD /* Flash */,
+				F8EBA99C212124BC004D7BDD /* HandsFree */,
+				F8EBA99E212124BC004D7BDD /* ImageCapture */,
+				F8EBA990212124BC004D7BDD /* NightMode */,
+				F8EBA98E212124BC004D7BDD /* Scanning */,
+				F8EBA994212124BC004D7BDD /* Shazam */,
+				F8EBA986212124BC004D7BDD /* SnapKit */,
+				F8EBA988212124BC004D7BDD /* TapToFocus */,
+				F8EBA9A2212124BC004D7BDD /* ToggleCamera */,
+				F8EBA9A4212124BC004D7BDD /* Zooming */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F8EBA980212124BC004D7BDD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA984212124BC004D7BDD /* SCFeature.h */,
+				F8EBA981212124BC004D7BDD /* SCFeatureContainerView.h */,
+				F8EBA982212124BC004D7BDD /* SCFeatureCoordinator.h */,
+				F8EBA983212124BC004D7BDD /* SCFeatureCoordinator.m */,
+				F8EBA985212124BC004D7BDD /* SCFeatureProvider.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F8EBA986212124BC004D7BDD /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA987212124BC004D7BDD /* SCFeatureSnapKit.h */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		F8EBA988212124BC004D7BDD /* TapToFocus */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA989212124BC004D7BDD /* SCFeatureTapToFocusAndExposure.h */,
+				F8EBA98B212124BC004D7BDD /* SCFeatureTapToFocusAndExposureImpl.h */,
+				F8EBA98D212124BC004D7BDD /* SCFeatureTapToFocusAndExposureImpl.m */,
+				F8EBA98C212124BC004D7BDD /* SCTapAnimationView.h */,
+				F8EBA98A212124BC004D7BDD /* SCTapAnimationView.m */,
+			);
+			path = TapToFocus;
+			sourceTree = "<group>";
+		};
+		F8EBA98E212124BC004D7BDD /* Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA98F212124BC004D7BDD /* SCFeatureScanning.h */,
+			);
+			path = Scanning;
+			sourceTree = "<group>";
+		};
+		F8EBA990212124BC004D7BDD /* NightMode */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA992212124BC004D7BDD /* SCFeatureNightMode.h */,
+				F8EBA993212124BC004D7BDD /* SCNightModeButton.h */,
+				F8EBA991212124BC004D7BDD /* SCNightModeButton.m */,
+			);
+			path = NightMode;
+			sourceTree = "<group>";
+		};
+		F8EBA994212124BC004D7BDD /* Shazam */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA995212124BC004D7BDD /* SCFeatureShazam.h */,
+			);
+			path = Shazam;
+			sourceTree = "<group>";
+		};
+		F8EBA996212124BC004D7BDD /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA998212124BC004D7BDD /* SCFeatureFlash.h */,
+				F8EBA99A212124BC004D7BDD /* SCFeatureFlashImpl.h */,
+				F8EBA997212124BC004D7BDD /* SCFeatureFlashImpl.m */,
+				F8EBA99B212124BC004D7BDD /* SCFlashButton.h */,
+				F8EBA999212124BC004D7BDD /* SCFlashButton.m */,
+			);
+			path = Flash;
+			sourceTree = "<group>";
+		};
+		F8EBA99C212124BC004D7BDD /* HandsFree */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA99D212124BC004D7BDD /* SCFeatureHandsFree.h */,
+			);
+			path = HandsFree;
+			sourceTree = "<group>";
+		};
+		F8EBA99E212124BC004D7BDD /* ImageCapture */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA9A0212124BC004D7BDD /* SCFeatureImageCapture.h */,
+				F8EBA9A1212124BC004D7BDD /* SCFeatureImageCaptureImpl.h */,
+				F8EBA99F212124BC004D7BDD /* SCFeatureImageCaptureImpl.m */,
+			);
+			path = ImageCapture;
+			sourceTree = "<group>";
+		};
+		F8EBA9A2212124BC004D7BDD /* ToggleCamera */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA9A3212124BC004D7BDD /* SCFeatureToggleCamera.h */,
+			);
+			path = ToggleCamera;
+			sourceTree = "<group>";
+		};
+		F8EBA9A4212124BC004D7BDD /* Zooming */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA9A5212124BC004D7BDD /* SCFeatureZooming.h */,
+			);
+			path = Zooming;
+			sourceTree = "<group>";
+		};
+		F8EBA9A6212124BC004D7BDD /* VolumeButton */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBA9A7212124BC004D7BDD /* SCCameraVolumeButtonHandler.h */,
+				F8EBA9A8212124BC004D7BDD /* SCCameraVolumeButtonHandler.m */,
+			);
+			path = VolumeButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		F8EBA84B212124AE004D7BDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = F8EBA84E212124AE004D7BDD /* Build configuration list for PBXProject "SnapChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8EBA84A212124AE004D7BDD;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		F8EBA84F212124AE004D7BDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F8EBA850212124AE004D7BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8EBA84E212124AE004D7BDD /* Build configuration list for PBXProject "SnapChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8EBA84F212124AE004D7BDD /* Debug */,
+				F8EBA850212124AE004D7BDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8EBA84B212124AE004D7BDD /* Project object */;
+}
